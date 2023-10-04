@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+   
+    margin: 10px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .piano {
+    display: flex;
+    border: 2px solid;
+    height: 252px;
+  }
+  
+  
+  .key_white {
+    width: 40px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #333;
+  
+  }
+  
+  .key_white:hover {
+    background-color: #CCC;
+  }
+  
+  .key_black {
+    width: 24px;
+    height: 120px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+  }
+  
+  .key_black:hover {
+    background-color: #333;
+  }
